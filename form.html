@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZettaXUPNVYK_HTML</title>
+    <link rel="icon" href="./logo_upn.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .center{
+            margin: auto;
+        }
+        .input{
+            background-color: cyan;
+            margin-left: 150px;
+            margin-right: 150px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            border-radius: 30px;
+            border: 5px solid;
+            padding: 10px;
+        
+        }
+        input[type=text],
+        input[type=email],
+        input[type=url],
+        input[type=tel],
+        input[type=number],
+        input[type=date],
+        input[type=submit],
+        select {
+            width: 55%;
+            padding: 5px;
+            padding-left: 20px;
+            margin: 7px 0;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        label{
+            margin-left: 100px;
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="input">
+        <h3 style="text-align: center;">Formulir Biodata</h3>
+        <form action="" method="get">
+            <label 
+            for="namad">Nama depan: &emsp;
+            </label>
+            <input type="text" id="namadepan" name="namadepan" value=""><br><br>
+
+            <label for="namab">Nama belakang:</label>
+            <input type="text" id="namabelakang" name="namabelakang" value=""><br><br>
+
+            <label for="jenis">Jenis Kelamin &emsp;</label>
+            <input type="radio" id="akhi" name="jk" value="akhi">
+            <label for="akhi" style="margin: auto;">Laki-laki</label>
+            <input type="radio" id="ukhti" name="jk" value="ukhti">
+            <label for="ukhti" style="margin: auto;">Perempuan</label><br><br>
+
+            <label for="email">Masukan alamat email:</label>
+            <input type="email" id="email" name="email" placeholder="Achmad.ikbal69@gmail.com"><br>
+
+            <label for="nohp">Masukan nomor telepon:</label>
+            <input type="tel" id="nohp" name="nohp" placeholder="0812-8230-1442"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+                <label for="tanggal">Tanggal Lahir:</label>
+            <input type="date" id="tanggal" name="tanggal"><br><br>
+            <label for="umur">Umur (Tahun):</label>
+            <input type="number" id="umur" name="umur" min="1">
+
+            <label for="url">Masukan Link Akun Instagram:</label>
+            <input type="url" id="url" name="url"><br><br>
+
+            <label for="pilihan">Kesukaan:</label>
+            <input type="checkbox" id="pil1" name="pil1" value="Bike">
+            <label for="pil1" style="margin: auto;">Suka Aku</label>
+            <input type="checkbox" id="pil2" name="pil2" value="Boat">
+            <label for="pil2" style="margin: auto;"> Suka Dia</label><br><br>
+
+            <label for="alamat">Alamat:</label>
+
+            <textarea id="alamat" name="w3review" rows="4" cols="80" >
+            
+            </textarea><br>
+            <input type="submit" value="Submit" style="margin-left:200px;">
+        </form>
+    </div>
+</body>
