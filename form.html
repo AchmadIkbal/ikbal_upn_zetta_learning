@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZettaXUPNVYK_HTML</title>
     <link rel="icon" href="./logo_upn.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+ <!-- Bootstrap core CSS -->
+ <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         .center{
             margin: auto;
@@ -31,7 +35,7 @@
         input[type=date],
         input[type=submit],
         select {
-            width: 55%;
+            width: 50%;
             padding: 5px;
             padding-left: 20px;
             margin: 7px 0;
@@ -48,46 +52,49 @@
     <div class="input">
         <h3 style="text-align: center;">Formulir Biodata</h3>
         <form action="" method="get">
-            <label 
-            for="namad">Nama depan: &emsp;
+                <label class="col-sm-3"
+            for="namad">Nama depan:
             </label>
-            <input type="text" id="namadepan" name="namadepan" value=""><br><br>
+            <input class="col-sm-9" type="text" id="namadepan" name="namadepan" value=""><br>
+              <label class="col-sm-3" for="namab">Nama belakang:</label>
+              <input class="col-sm-9" type="text" id="namabelakang" name="namabelakang" value=""><br>
 
-            <label for="namab">Nama belakang:</label>
-            <input type="text" id="namabelakang" name="namabelakang" value=""><br><br>
-
-            <label for="jenis">Jenis Kelamin &emsp;</label>
+            <label class="col-sm-3"for="jenis">Jenis Kelamin &emsp;</label>
             <input type="radio" id="akhi" name="jk" value="akhi">
             <label for="akhi" style="margin: auto;">Laki-laki</label>
             <input type="radio" id="ukhti" name="jk" value="ukhti">
             <label for="ukhti" style="margin: auto;">Perempuan</label><br><br>
 
-            <label for="email">Masukan alamat email:</label>
+            <label class="col-sm-3"for="email">Masukan alamat email:</label>
             <input type="email" id="email" name="email" placeholder="Achmad.ikbal69@gmail.com"><br>
 
-            <label for="nohp">Masukan nomor telepon:</label>
+            <label class="col-sm-3" for="nohp">Masukan nomor telepon:</label>
             <input type="tel" id="nohp" name="nohp" placeholder="0812-8230-1442"
                 pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
-                <label for="tanggal">Tanggal Lahir:</label>
+                <label class="col-sm-3" for="tanggal">Tanggal Lahir:</label>
             <input type="date" id="tanggal" name="tanggal"><br><br>
-            <label for="umur">Umur (Tahun):</label>
+            <label class="col-sm-3" for="umur">Umur</label>
             <input type="number" id="umur" name="umur" min="1">
 
-            <label for="url">Masukan Link Akun Instagram:</label>
+            <label class="col-sm-3" for="url">Masukan Link Akun Instagram:</label>
             <input type="url" id="url" name="url"><br><br>
 
-            <label for="pilihan">Kesukaan:</label>
+            <label class="col-sm-3" for="pilihan">Hooby:</label>
             <input type="checkbox" id="pil1" name="pil1" value="Bike">
-            <label for="pil1" style="margin: auto;">Suka Aku</label>
+            <label for="pil1" style="margin: auto;">Futsal</label>
             <input type="checkbox" id="pil2" name="pil2" value="Boat">
-            <label for="pil2" style="margin: auto;"> Suka Dia</label><br><br>
+            <label for="pil2" style="margin: auto;"> Basket</label>
+            <input type="checkbox" id="pil2" name="pil2" value="Boat">
+            <label for="pil2" style="margin: auto;"> Sepak Bola</label>
+            <input type="checkbox" id="pil2" name="pil2" value="Boat">
+            <label for="pil2" style="margin: auto;"> Base ball</label><br><br>
 
-            <label for="alamat">Alamat:</label>
+            <label class="col-sm-3" for="alamat">Alamat:</label>
+            <textarea name="alamat" id="" cols="0" rows="5"></textarea>
 
-            <textarea id="alamat" name="w3review" rows="4" cols="80" >
-            
-            </textarea><br>
-            <input type="submit" value="Submit" style="margin-left:200px;">
+            <input type="submit" value="Submit" style="margin-left:250px;">
         </form>
     </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
