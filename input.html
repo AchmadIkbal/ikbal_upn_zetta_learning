@@ -42,13 +42,21 @@
         label{
             margin-left: 50px;
         }
+        table{
+            margin-left: 50px;
+        }
     </style>
     <body>
         <div class="container">
             <h1 style="text-align: center;">Input Item</h1>
         </div><br><br>
         <div class="container1">
+            <section>
             <form action="" method="get">
+                <label for="" class="col-sm-1" style="color: black;">
+                    Email:
+                </label>
+                <input class="col-sm-10" type="email" name="" id="" placeholder="Example@gmail.com"><br><br>
                 <label for="" class="col-sm-1" style="color: black;">
                     Nama Item:
                 </label>
@@ -58,17 +66,70 @@
                 </label>
                 <input class="col-sm-10" type="number" id="umur" name="umur" min="1"><br><br>
                 <label for="" class="col-sm-1" style="color: black;">
-                    Email:
+                    Harga:
                 </label>
-                <input class="col-sm-10" type="email" name="" id="" placeholder="Example@gmail.com">
-                <label for="" class="col-sm-1" style="color: black;">
-                    Email:
-                </label>
+                <input class="col-sm-10" type="number" value="" placeholder="50.000"><br><br>
+                <label class="col-sm-1" >Tanggal Masuk:</label>
+                <input class="col-sm-10" type="date"><br><br>
+                <label class="col-sm-1" for="tanggal">Tanggal Keluar:</label>
+                <input class="col-sm-10" type="date"><br><br>
+                <label for="" class="col-sm-1">Jenis Pembelian:</label>
+                <input type="radio" id="Grosir" name="fav_language" value="Grosir">
+                <label for="Grosir" style="margin: auto;">Grosir</label>
+                <input type="radio" id="Non-Grosir" name="fav_language" value="Non-Grosir">
+                <label for="Non-Grosir"style="margin: auto;">Non-Grosir</label><br>
+                <label for="" class="col-sm-1">Gambar:</label>
+                <input type="file" class="col-sm-10">
+                <input type="submit" value="Submit" style="margin-left: 500px;"><br>
 
 
 
             </form>
+        </section>
         </div>
+        <br><br>
+        <section>
+            <div class="container">
+                <h1 style="text-align: center;">Output Item</h1>
+            </div><br><br>
+            <div class="container1">
+                <table class="table">
+                    <tr>
+                        <td class="col-sm-1"><b>Email</b></td>
+                        <td class="col-sm-10">Achmad.ikbal69@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="col-sm-1"><b>Nama Item</b></td>
+                        <td>Parfum</td>
+                    </tr>
+                    <tr>
+                        <td><b>Jumlah</b></td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><b>Harga</b></td>
+                        <td>Rp. 50.000</td>
+                    </tr>
+                    <tr>
+                        <td><b>Tanggal Masuk</b></td>
+                        <td>10-10-2022</td>
+                    </tr>
+                    <tr>
+                        <td><b>Tanggal Keluar</b></td>
+                        <td>19-10-2022</td>
+                    </tr>
+                    <tr>
+                        <td><b>Jenis Pembelian</b></td>
+                        <td>Grosir</td>
+                    </tr>
+                    <tr>
+                        <td><b>Gambar</b></td>
+                        <td><img src="assets/parfum.jpg" alt="" width="250" height="250"></td>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     </body>
