@@ -29,6 +29,7 @@
     border-radius: 20px;
     box-shadow: 5px 6px 8px rgba(56, 56, 56, 0.468);
     margin: auto;
+    text-align: center;
     border: 1px solid black;
  }
  .card header img {
@@ -43,16 +44,18 @@
     text-align: center;
  }
  article {
-    width: 500px;
+    width: 60%;
     margin: 0 auto;
-    display: flex;
     justify-content: space-around;
+    overflow: hidden;
+    text-align: center;
+
  }
  article section {
-    background-color: gainsboro;
+    background-color: white;
     padding: 16px;
     height: 200px;
-    overflow: auto;
+    overflow-y: scroll;
  }
  .row1 {
     margin-top: 0;
