@@ -62,54 +62,15 @@
     margin-bottom: 0;
  }
  footer{
-   width: 100%;
-   margin: auto;
-   display: flex; /*membuat seperti kolom kolom */
-
-   top: o;
+    background-color: black;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 15px 20px 18px 20px;
+    border: 3px solid black;
+    text-align: center;
+    flex-direction: row;
    }
-   nav ul{
-       margin: 0px;
-       padding: 0px;
-       list-style: none;
-       overflow: hidden; /*untuk menghilangkan li*/
-   }
-   nav ul li{
-       float: left; /*mengatur latak element*/
-       color: white;
-   }
-   footer a{
-       font-weight: bold;
-       color: white;
-       text-align: center;
-       padding: 0px 16px 0px 16px;
-       text-decoration: none;
-       font-family: asap_font;
-   }
-   nav ul li .dropdown{
-       display: none;
-       color: white;
-   }
-   nav ul li:hover .dropdown{
-       display: block;
-       background-color:black;
-       position: absolute;
-       padding: 10px;
-   }
-   nav ul li:hover .dropdown li {
-       display: block;
-   }
-   nav ul li:hover .dropdown li a{
-       padding: 10px;
-       border-radius: 5px;
-       margin-bottom: 5px;
-   }
-   nav ul li:hover .dropdown li a:hover{
-       background-color: red;
-       border-radius: 10px;
-       color: white;
-       text-decoration: none;
-   }
+   
    a.link:hover{
        text-decoration: none;
        background: red;
@@ -117,4 +78,10 @@
        margin-top: 20px;
        padding: 15px 20px 18px 20px;
        color: white;
+   }
+   button{
+    text-decoration: none;
+   }
+   footer div{
+    color: white;
    }
