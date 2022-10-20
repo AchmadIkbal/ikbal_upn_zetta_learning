@@ -1,0 +1,93 @@
+* {
+    color: rgb(64, 64, 64);
+ }
+ .container{
+            background-color: bisque;
+            margin-left: 150px;
+            margin-right: 150px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            border-radius: 30px;
+            border: 3px solid black;
+        
+        }
+ body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ .title {
+    text-align: center;
+    width: 800px;
+    margin: auto;
+ }
+ .card {
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 6px 8px rgba(56, 56, 56, 0.468);
+    margin: auto;
+    border: 1px solid black;
+ }
+ .card header img {
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+ }
+ p{
+    text-align: center;
+}
+ .card > h3 {
+    text-align: center;
+ }
+ article {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+ }
+ article section {
+    background-color: gainsboro;
+    padding: 16px;
+    height: 200px;
+    overflow: auto;
+ }
+ .row1 {
+    margin-top: 0;
+ }
+ .row2 {
+    margin: 1 rem 0;
+ }
+ .row4 {
+    margin-bottom: 0;
+ }
+ footer{
+    background-color: black;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 20px 20px 18px 20px;
+    border: 3px solid black;
+    text-align: center;
+    flex-direction: row;
+   }
+   
+   a.link:hover{
+       text-decoration: none;
+       background: red;
+       border-radius: 20px;
+       margin-top: 20px;
+       padding: 15px 20px 18px 20px;
+       color: white;
+   }
+   button{
+    text-decoration: none;
+   }
+   footer a{
+    color: white;
+   }
+   footer p{
+    color: white;
+   }
+
