@@ -1,4 +1,4 @@
-function purchasingBook(book, percentageDiscount, percentageTax, stockbook, orderbook) {
+function purchasingBook(book, percentageDiscount, percentageTax, stockbook, orderbook, credit) {
     let result = 0;
     const price = book.price;
     const discountAmount = price * (percentageDiscount / 100);
@@ -24,15 +24,15 @@ function purchasingBook(book, percentageDiscount, percentageTax, stockbook, orde
 
     if (book && book.price && orderbook <= stockbook) {
         console.group();
-        console.log("Judul Buku : ", book.title);
-        console.log("Harga Satuan : ", price);
-        console.log("Jumlah yang dibeli : ", orderbook);
-        console.log("Persentase diskon : ", percentageDiscount, "%");
-        console.log("Biaya setelah diskon : ", priceAfterDiscount);
-        console.log("Persentase PPN : ", percentageTax, "%");
-        console.log("Biaya PPN : ", taxAmount);
-        console.log("Total pembayaran : ", priceAfterTax);
-        console.log("Sisa Stok buku : ", stockbook - orderbook);
+        console.log("Judul Buku                       : ", book.title);
+        console.log("Harga Satuan                     : ", price);
+        console.log("Jumlah yang dibeli               : ", orderbook);
+        console.log("Persentase diskon                : ", percentageDiscount, "%");
+        console.log("Biaya setelah diskon             : ", priceAfterDiscount);
+        console.log("Persentase PPN                   : ", percentageTax, "%");
+        console.log("Biaya PPN                        : ", taxAmount);
+        console.log("Total pembayaran                 : ", priceAfterTax);
+        console.log("Sisa Stok buku                   : ", stockbook - orderbook);
         if (stockbook - orderbook == 0) {
             console.log("Stok Buku Habis silahkan menunggu Restocki");
         } else {
