@@ -1,4 +1,4 @@
-function purchasingBook(book, percentageDiscount, percentageTax, stockbook, orderbook, credit) {
+function purchasingBook(book, percentageDiscount, percentageTax, stockbook, orderbook) {
     let result = 0;
     const price = book.price;
     const discountAmount = price * (percentageDiscount / 100);
