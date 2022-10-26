@@ -1,11 +1,13 @@
-function purchasingBook(book, percentageDiscount, percentageTax) {
+function purchasingBook(book, percentageDiscount, percentageTax, stockbook, orderbook) {
     let result = 0;
+
     if (book && book.price) {
         const price = book.price;
         const discountAmount = price * (percentageDiscount / 100);
         const priceAfterDiscount = price - discountAmount;
         const taxAmount = priceAfterDiscount * (percentageTax / 100);
         const priceAfterTax = priceAfterDiscount + taxAmount;
+
 
         console.group();
         console.log("Judul Buku : ", book.title);
@@ -21,4 +23,4 @@ function purchasingBook(book, percentageDiscount, percentageTax) {
     return 0;
 }
 
-purchasingBook({ title: "JS Ikbal", price: 100000, status: true }, 50, 10);
+purchasingBook({ title: "JS Ikbal", price: 100000, status: true }, 20, 10);
