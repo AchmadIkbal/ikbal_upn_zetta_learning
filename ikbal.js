@@ -40,7 +40,7 @@ function purchasingBook(book, percentageDiscount, percentageTax, stockbook, orde
             console.log("Stok Buku ada silahkan membeli");
         }
         console.log("");
-        console.log("Anda melakukan cicilan sebanyak ", credit, " kali");
+        console.log("Anda melakukan cicilan sebanyak  : ", credit, " kali");
         console.groupEnd();
     }
     jatuhTempo = totalPaymentPrice / credit;
@@ -55,4 +55,4 @@ function purchasingBook(book, percentageDiscount, percentageTax, stockbook, orde
     return totalPriceToPay;
 }
 
-purchasingBook({ title: "JS Ikbal", price: 100000, status: true }, 20, 10, 10, 9, 7);
+purchasingBook({ title: "JS Ikbal", price: 100000, status: true }, 20, 10, 10, 5, 7);
