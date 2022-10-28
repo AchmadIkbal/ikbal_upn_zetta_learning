@@ -1,7 +1,11 @@
-function returntext(text, index1, index2) {
-    return text;
+var mixed1 = [1, 'data', '3', 'result'];
+var mixed2 = ['Bejo', 'has', '4', 'sport', 'car'];
+function combinator(array) {
+    var result = "";
+    array.map(function (array) {
+        result = result + " " + array;
+    });
+    return result;
 }
-var text = "Learning Typescript is different than Javascript";
-var index1 = 9;
-var index2 = 19;
-console.log(returntext(text, index1, index2));
+console.log(combinator(mixed1));
+console.log(combinator(mixed2));

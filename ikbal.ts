@@ -1,8 +1,14 @@
-function returntext(text: string, index1: number, index2: number): string{
-    return text;
-}
-const text = "Learning Typescript is different than Javascript";
-const index1 = 9;
-const index2 = 19;
+let mixed1 = [1, 'data', '3', 'result']
+let mixed2 = ['Bejo', 'has', '4', 'sport', 'car']
 
-console.log(returntext(text, index1, index2));
+function combinator(array: (string | number)[]): string {
+    let result: string = "";
+    array.map((array) => {
+      result = result + " " + array;
+    });
+    return result;
+  }
+
+
+console.log(combinator(mixed1));
+console.log(combinator(mixed2));
