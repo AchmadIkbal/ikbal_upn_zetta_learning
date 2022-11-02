@@ -5,6 +5,7 @@
 .row {
     display: flex;
     justify-content: space-evenly;
+    table-layout: 1px;
 }
 
 .online {
