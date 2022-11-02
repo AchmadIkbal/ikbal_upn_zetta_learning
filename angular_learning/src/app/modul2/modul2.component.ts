@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modul2.component.scss']
 })
 export class Modul2Component implements OnInit {
-  user = ['Victor','Jeff','Robert'];
+  user = ['Ikbal','FIdel','Fadel','Virgi','Mario','Faruk'];
   currentStatus1 = 'offline';
   currentStatus2 = 'offline';
   currentStatus3 = 'offline';
+  currentStatus4 = 'offline';
+  currentStatus5 = 'offline';
+  currentStatus6 = 'offline';
   status = true;
 
   changeStatus1(){
@@ -20,6 +23,15 @@ export class Modul2Component implements OnInit {
   }
   changeStatus3(){
     this.currentStatus3 = "online";
+  }
+  changeStatus4(){
+    this.currentStatus4 = "online";
+  }
+  changeStatus5(){
+    this.currentStatus5 = "online";
+  }
+  changeStatus6(){
+    this.currentStatus6 = "online";
   }
 
   constructor() { 

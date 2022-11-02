@@ -1,11 +1,18 @@
 .card {
     margin: 6px 10px 0px 10px;
+    background-color: gray;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .row {
     display: flex;
     justify-content: space-evenly;
     table-layout: 1px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .online {
@@ -19,5 +26,6 @@ p {
 }
 
 button {
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
