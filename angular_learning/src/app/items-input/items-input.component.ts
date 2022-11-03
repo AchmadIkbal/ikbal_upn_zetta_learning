@@ -1,17 +1,15 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-items-input',
   templateUrl: './items-input.component.html',
-  styleUrls: ['./items-input.component.scss']
+  styleUrls: ['./items-input.component.css']
 })
 export class ItemsInputComponent implements OnInit {
-  @Input('taskElement') element: {type: string,name: string,content:string};
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 
 }
