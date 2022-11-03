@@ -11,38 +11,38 @@ export interface selectedGame {title:string, id:string, harga:number, jumlah:num
 export class KasirComponent implements OnInit {
   @Output ('gameAdded') onAddGame : EventEmitter<Game> = new EventEmitter<Game>()
 
-  judul: string = 'List Game';
+  judul: string = 'List Menu';
 
   public games: Game[] = [
     {
       id:'1',
-      title: 'FIFA 23',
-      harga:899000
+      title: 'Hanger',
+      harga:10000
     },
     {
       id:'2',
-      title: 'Spiderman',
-      harga:700000
+      title: 'Tissue',
+      harga:15000
     },
     {
       id:'3',
-      title: 'The Witcher 3',
-      harga:400000
+      title: 'Aqua',
+      harga:5000
     },
     {
       id:'4',
-      title: 'DmC 5',
-      harga:250000
+      title: 'Lem',
+      harga:2000
     },
     {
       id:'5',
-      title: 'GTA V',
-      harga:300000
+      title: 'Sedotan',
+      harga:5000
     },
     {
       id:'6',
-      title: 'Warcraft',
-      harga:100000
+      title: 'Kertas',
+      harga:500
     },
   ];
 

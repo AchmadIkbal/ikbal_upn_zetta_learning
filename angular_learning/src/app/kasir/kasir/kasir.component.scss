@@ -8,6 +8,7 @@ div {
 }
 
 .card {
+    text-align: center;
     margin: 10px;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -16,6 +17,7 @@ div {
 }
 
 button {
+    text-align: center;
     display: inline-block;
     background: rgb(207, 255, 247);
     color: rgb(0, 0, 0);
