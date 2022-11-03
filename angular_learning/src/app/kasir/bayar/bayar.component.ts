@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter, AfterContentChecked } from '@angular/core';
-import { Game } from '../kasir/kasir.component';
+import { Toko } from '../kasir/kasir.component';
 import { selectedGame } from '../kasir/kasir.component';
 @Component({
   selector: 'app-bayar',
@@ -7,7 +7,7 @@ import { selectedGame } from '../kasir/kasir.component';
   styleUrls: ['./bayar.component.scss']
 })
 export class BayarComponent implements OnInit, AfterContentChecked {
-  @Output ('gameAdded') onAddGame : EventEmitter<Game> = new EventEmitter<Game>()
+  @Output ('gameAdded') onAddGame : EventEmitter<Toko> = new EventEmitter<Toko>()
   @Input() games!: selectedGame[];
 
   public total:number = 0;
@@ -19,7 +19,7 @@ export class BayarComponent implements OnInit, AfterContentChecked {
 
   ngAfterContentChecked(): void {
     console.log("tes")
-    this.total = this.games.reduce((total, game) => total += game.jumlah * game.harga , 0)
+    this.total = this.games.reduce((total, toko) => total += toko.jumlah * toko.harga , 0)
   }
 
 }

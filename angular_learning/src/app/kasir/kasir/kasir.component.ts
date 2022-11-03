@@ -1,5 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-export interface Game {title:string, id:string, harga:number}  
+export interface Toko {title:string, id:string, harga:number}  
 export interface selectedGame {title:string, id:string, harga:number, jumlah:number}  
 
 @Component({
@@ -9,11 +9,11 @@ export interface selectedGame {title:string, id:string, harga:number, jumlah:num
 })
 
 export class KasirComponent implements OnInit {
-  @Output ('gameAdded') onAddGame : EventEmitter<Game> = new EventEmitter<Game>()
+  @Output ('gameAdded') onAddGame : EventEmitter<Toko> = new EventEmitter<Toko>()
 
   judul: string = 'List Menu';
 
-  public games: Game[] = [
+  public games: Toko[] = [
     {
       id:'1',
       title: 'Hanger',
@@ -53,14 +53,14 @@ export class KasirComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  addGame(game :Game){
-    const duplicated =this.selectedGames.findIndex(({id})=>id===game.id)
+  addGame(toko :Toko){
+    const duplicated =this.selectedGames.findIndex(({id})=>id===toko.id)
     let jumlah : 0;
     if(duplicated>=0){
       this.selectedGames[duplicated].jumlah+=1
     }
     else{
-      this.selectedGames.push({...game, jumlah: 1})
+      this.selectedGames.push({...toko, jumlah: 1})
     }
   }
 
