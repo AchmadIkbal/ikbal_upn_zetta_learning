@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path:'kasir',
     pathMatch:'full',
-    loadChildren:()=>import('./kasir/kasir.module').then(mod=>mod.KasirModule),
+    loadChildren:()=>import('./kasir/kasir.module').then(mod=>mod.KasirRoutingModule),
   }
 ];
 
