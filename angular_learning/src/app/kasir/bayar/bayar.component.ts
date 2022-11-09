@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter, AfterContentChecked } from '@angular/core';
-import { Toko } from '../kasir/kasir.component';
+import { Game } from '../kasir/kasir.component';
 import { selectedGame } from '../kasir/kasir.component';
 @Component({
   selector: 'app-bayar',
@@ -7,7 +7,7 @@ import { selectedGame } from '../kasir/kasir.component';
   styleUrls: ['./bayar.component.scss']
 })
 export class BayarComponent implements OnInit, AfterContentChecked {
-  @Output ('gameAdded') onAddGame : EventEmitter<Toko> = new EventEmitter<Toko>()
+  @Output ('gameAdded') onAddGame : EventEmitter<Game> = new EventEmitter<Game>()
   @Input() games!: selectedGame[];
 
   public total:number = 0;
