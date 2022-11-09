@@ -1,19 +1,23 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-import { KasirRoutingModule } from './kasir-routing.module';
+import { RouterModule, Routes } from '@angular/router';
 import { KasirComponent } from './kasir/kasir.component';
-import { BayarComponent } from './bayar/bayar.component';
+
+const routes : Routes = [
+  {
+    path: '',
+    pathMatch:'full',
+    component: KasirComponent
+  },
+  {
+    path: '**',
+    pathMatch:'full',
+    redirectTo:''
+  }
+]
 
 
 @NgModule({
-  declarations: [
-    KasirComponent,
-    BayarComponent
-  ],
-  imports: [
-    CommonModule,
-    KasirRoutingModule
-  ]
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
 })
-export class KasirModule { }
+export class KasirRoutingModule { }
