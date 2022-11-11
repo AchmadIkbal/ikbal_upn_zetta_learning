@@ -1,0 +1,25 @@
+.panel {
+    margin: 25px 10px 0px 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.panel-heading {
+    text-align: left;
+}
+
+p {
+    text-align: center;
+}
+
+#good {
+    font-weight: bold;
+    color: white;
+    background-color: green;
+}
+
+#broken {
+    font-style: italic;
+    color: white;
+    background-color: red;
+}

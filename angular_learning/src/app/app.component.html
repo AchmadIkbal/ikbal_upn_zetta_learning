@@ -1,9 +1,17 @@
-<div class="container">
-    <div class="title">
-        <h1>Cyber Shop</h1>
-    </div>
-
-    <div class="jualbeli">
-        <router-outlet></router-outlet>
+<h1>
+    REPORT ANGULAR DAY 4</h1>
+<div class="content">
+    <app-component2 (itCreated)="onAddItem($event)"></app-component2>
+    <hr />
+    <div class="flex-container">
+        <app-component1 *ngFor="let list of itemList; index as i" [items]="list" [status]="list.itemStatus">
+            <hr />
+            <button class="btn btn-danger" (click)="destroyItem(i)">Hapus</button>
+            <button class="btn btn-primary" (click)="changeStatus(i)">
+        Ganti Status
+      </button>
+        </app-component1>
     </div>
 </div>
+<!-- <iframe allow="camera; microphone; fullscreen; display-capture; autoplay" src="https://meet.jit.si/MHP"
+  style="height: 50rem; width: 75rem; border: 0px;"></iframe> -->
