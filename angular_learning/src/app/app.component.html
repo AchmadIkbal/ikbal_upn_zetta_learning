@@ -1,13 +1,9 @@
-<h1>FrosZ Gameshop</h1>
-<div style="text-align: center;">
-    <label for="">Nama  : </label>
-    <input #Nama type="text">
-    <button (click)="InputNama(Nama.value)">input</button>
-    <h3> Selamat Datang! <br> {{Nama.value}}</h3>
-    <br>
-    <button (click)="tampilGame()">Tampilkan Game</button>
-</div>
+<div class="container">
+    <div class="title">
+        <h1>Lestari Shop</h1>
+    </div>
 
-<div>
-    <router-outlet *ngIf='isChild'></router-outlet>
+    <div class="jualbeli">
+        <router-outlet></router-outlet>
+    </div>
 </div>

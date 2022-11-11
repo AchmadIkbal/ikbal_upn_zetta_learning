@@ -3,9 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:'kasir',
-    pathMatch:'full',
-    loadChildren:()=>import('./kasir/kasir.module').then(mod=>mod.KasirRoutingModule),
+    path: '',
+    loadChildren:() => import('./jualbeli/jualbeli.module').then(module => module.JualBeliModule),
   }
 ];
 

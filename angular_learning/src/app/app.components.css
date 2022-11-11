@@ -1,22 +1,17 @@
-button {
-    display: inline-block;
-    background: rgb(207, 255, 247);
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: inherit;
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-input {
-    padding: 10px 20px;
+.container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    background-color: hwb(303 55% 11%);
 }
 
-h3 {
-    font-size: 50px;
-    text-transform: capitalize;
+.title {
+    color: #fff;
+    background-color: rgb(37, 77, 255);
+    padding: 0.5em;
 }

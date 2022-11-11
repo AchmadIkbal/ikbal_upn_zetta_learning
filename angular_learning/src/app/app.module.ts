@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { KasirRoutingModule } from './kasir/kasir.module';
 
 @NgModule({
   declarations: [
@@ -11,8 +10,7 @@ import { KasirRoutingModule } from './kasir/kasir.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    KasirRoutingModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
